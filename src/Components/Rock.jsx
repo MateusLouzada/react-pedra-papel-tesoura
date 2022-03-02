@@ -8,8 +8,8 @@ function Rock() {
   const handleChoice = () => localStorage.setItem('result', 'rock');
 
   return (
-    <Div>
-      <Link to="result" onClick={handleChoice}>
+    
+      <Link className={link} to="result" onClick={handleChoice}>
         <DivIntern>
           <img
             src={imageRock}
@@ -20,13 +20,13 @@ function Rock() {
           />
         </DivIntern>
       </Link>
-    </Div>
+    
   );
 }
 
 export default Rock;
 
-const Div = styled.div`
+const link = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;

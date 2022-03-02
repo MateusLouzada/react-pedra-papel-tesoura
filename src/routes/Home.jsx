@@ -5,18 +5,20 @@ import Scissors from "../Components/Scissors";
 import Paper from "../Components/Paper";
 
 function Home() {
-    return (
-        <Div>
-          <ScoreDiv>
-            <Score/>
-          </ScoreDiv>
-          <InternDiv>
-            <Rock/>
-            <Scissors/>
-            <Paper />
-          </InternDiv>
-        </Div>
-    )
+  return (
+    <Div>
+      <ScoreDiv>
+        <Score />
+      </ScoreDiv>
+      <InternDiv>
+        <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+          <Rock />
+        </div>
+        <Scissors />
+        <Paper />
+      </InternDiv>
+    </Div>
+  )
 }
 
 export default Home
@@ -29,10 +31,7 @@ const Div = styled.div`
   align-items: center;
   background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   height: 100vh;
-  overflow: hidden;
   width: 100vw;
-  margin: 0;
-  padding: 0;
 `;
 
 const ScoreDiv = styled.div`

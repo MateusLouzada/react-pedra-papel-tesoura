@@ -1,14 +1,9 @@
 import React from "react";
 import imagePaper from "../../images/icon-paper.svg";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 function Paper() {
-
-  const handleChoice = () => localStorage.setItem('result', 'paper');
-
   return (
-    <Link to="result" onClick={handleChoice}>
       <Div>
         <img
           src={imagePaper}
@@ -18,7 +13,6 @@ function Paper() {
           }}
         />
       </Div>
-    </Link>
   );
 }
 
@@ -28,11 +22,12 @@ const Div = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border-width: 10px;
+  border-width: 17px;
   border-style: solid;
   border-color: purple;
   background-color: whitesmoke;
+  box-shadow: inset 0px 6px 1em gray ,7px 7px 1em black;
 `;

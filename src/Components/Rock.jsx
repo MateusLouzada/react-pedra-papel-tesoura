@@ -1,15 +1,9 @@
 import React from "react";
 import imageRock from "../../images/icon-rock.svg";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 function Rock() {
-
-  const handleChoice = () => localStorage.setItem('result', 'rock');
-
-  return (
-    
-      <Link className={link} to="result" onClick={handleChoice}>
+  return (     
         <DivIntern>
           <img
             src={imageRock}
@@ -18,9 +12,7 @@ function Rock() {
               width: "80px",
             }}
           />
-        </DivIntern>
-      </Link>
-    
+        </DivIntern>   
   );
 }
 
@@ -36,11 +28,12 @@ const DivIntern = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border-width: 10px;
+  border-width: 17px;
   border-style: solid;
   border-color: red;
   background-color: whitesmoke;
+  box-shadow: inset 0px 6px 1em gray ,7px 7px 1em black;
 `;
